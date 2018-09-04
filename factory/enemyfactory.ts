@@ -3,7 +3,10 @@ import { Alien } from "./alien";
 import { Asteroid } from "./asteroid";
 import { BigAsteroid } from "./bigasteroid";
 
-export class EnemyFactory {
+interface Factory {
+    makeEnemy(type: string): Enemy;
+}
+export class EnemyFactory implements Factory {
 
     public makeEnemy = (type: string): Enemy => {
         let newEnemy = null;
