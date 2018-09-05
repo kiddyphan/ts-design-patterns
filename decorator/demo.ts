@@ -4,7 +4,6 @@ import { Breakfast } from "./breakfast";
 import { Lunch } from "./lunch";
 import { Room } from "./booking";
 
-
 /*
     Decorator pattern lets you dynamically change the behavior of an object at run time by wrapping them in an object of a decorator class.
 */
